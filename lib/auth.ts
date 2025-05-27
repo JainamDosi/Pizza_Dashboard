@@ -11,10 +11,5 @@ export const authOptions: NextAuthOptions = {
   pages: {
     signIn: '/login',
   },
-  callbacks: {
-    async session({ session, token }) {
-      session.user.id = token.sub!;
-      return session;
-    },
-  },
+
 };
