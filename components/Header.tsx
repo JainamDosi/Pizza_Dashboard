@@ -2,11 +2,10 @@
 import { useState } from 'react';
 import { signOut } from 'next-auth/react';
 import Link from 'next/link';
-import { Roboto, Montserrat } from 'next/font/google';
+import {Montserrat } from 'next/font/google';
 import { Menu, X } from 'lucide-react'; // Make sure lucide-react is installed
 
-export const roboto = Roboto({ subsets: ['latin'], weight: ['400', '700'] });
-export const montserrat = Montserrat({ subsets: ['latin'], weight: ['400', '700'] });
+const montserrat = Montserrat({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);

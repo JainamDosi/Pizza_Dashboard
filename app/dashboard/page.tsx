@@ -1,9 +1,8 @@
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 import { redirect } from "next/navigation";
-import { Roboto, Montserrat } from 'next/font/google';
-export const roboto = Roboto({ subsets: ['latin'], weight: ['400', '700'] });
-export const montserrat = Montserrat({ subsets: ['latin'], weight: ['400', '700'] });
+import { Montserrat } from 'next/font/google';
+const montserrat = Montserrat({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default async function Dashboard() {
   const session = await getServerSession(authOptions);
