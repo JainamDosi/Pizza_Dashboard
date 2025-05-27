@@ -78,7 +78,7 @@ Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
 
 
-## A personal note from developer
+## A small note from developer :
 
 - Did I write the code ? - Yes
 - Did I write the whole code 😁 ? - No (Vibe coding was fun)
