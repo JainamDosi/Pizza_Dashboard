@@ -79,31 +79,42 @@ export default function PizzaTable({ data }: PizzaTableProps) {
         <table className="min-w-full bg-transparent text-white text-sm md:text-base">
           <thead>
             <tr>
-              <th
-                className="p-3 text-left font-semibold uppercase cursor-pointer"
-                onClick={() => {
-                  setSortBy('id');
-                  setSortOrder((prev) =>
-                    sortBy === 'id' && prev === 'asc' ? 'desc' : 'asc'
-                  );
-                }}
-              >
-                Order ID {sortBy === 'id' ? (sortOrder === 'asc' ? '▲' : '▼') : ''}
-              </th>
-              <th className="p-3 text-left font-semibold uppercase">Customer</th>
-              <th className="p-3 text-left font-semibold uppercase">Pizza</th>
-              <th className="p-3 text-left font-semibold uppercase">Qty</th>
-              <th
-                className="p-3 text-left text-amber-200 font-semibold uppercase cursor-pointer"
-                onClick={() => {
-                  setSortBy('date');
-                  setSortOrder((prev) =>
-                    sortBy === 'date' && prev === 'asc' ? 'desc' : 'asc'
-                  );
-                }}
-              >
-                Date {sortBy === 'date' ? (sortOrder === 'asc' ? '▲' : '▼') : ''}
-              </th>
+
+<th className="p-3 text-left font-semibold uppercase flex items-center gap-2">
+  Order ID
+  <button
+    type="button"
+    className="ml-1 px-1 py-0.5 rounded bg-gray-700 hover:bg-gray-600 text-amber-300 text-xs"
+    onClick={() => {
+      setSortBy('id');
+      setSortOrder((prev) =>
+        sortBy === 'id' && prev === 'asc' ? 'desc' : 'asc'
+      );
+    }}
+    aria-label="Sort by Order ID"
+  >
+    {sortBy === 'id' ? (sortOrder === 'asc' ? '▲' : '▼') : '⇅'}
+  </button>
+</th>
+<th className="p-3 text-left font-semibold uppercase">Customer</th>
+<th className="p-3 text-left font-semibold uppercase">Pizza</th>
+<th className="p-3 text-left font-semibold uppercase">Qty</th>
+<th className="p-3 text-left font-semibold uppercase flex items-center gap-2">
+  Date
+  <button
+    type="button"
+    className="ml-1 px-1 py-0.5 rounded bg-gray-700 hover:bg-gray-600 text-amber-300 text-xs"
+    onClick={() => {
+      setSortBy('date');
+      setSortOrder((prev) =>
+        sortBy === 'date' && prev === 'asc' ? 'desc' : 'asc'
+      );
+    }}
+    aria-label="Sort by Date"
+  >
+    {sortBy === 'date' ? (sortOrder === 'asc' ? '▲' : '▼') : '⇅'}
+  </button>
+</th>
               <th className="p-3 text-left font-semibold uppercase">Status</th>
             </tr>
           </thead>

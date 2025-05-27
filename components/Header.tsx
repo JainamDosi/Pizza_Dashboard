@@ -11,7 +11,7 @@ export const montserrat = Montserrat({ subsets: ['latin'], weight: ['400', '700'
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
-  return (
+  return (  
     <header className="bg-[#1a1a1a] text-white shadow-md">
       <div className="flex items-center justify-between px-6 py-4 md:px-12">
         {/* Left: Logo */}
