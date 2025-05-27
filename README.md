@@ -76,4 +76,10 @@ Visit [http://localhost:3000](http://localhost:3000) in your browser.
 - [@next/font](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) (font optimization)
 - [Recharts](https://recharts.org/) (data visualization)
 
+
+
+## A personal note from developer
+
+- Did I write the code ? - Yes
+- Did I write the whole code 😁 ? - No (Vibe coding was fun)
 ---
