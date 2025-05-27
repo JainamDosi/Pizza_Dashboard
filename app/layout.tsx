@@ -17,7 +17,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
   return (
     <html lang="en">
       <body className="bg-[#141414]">
-        {session && <Header user={session.user} />}
+        {session && <Header  />}
         <main >{children}</main>
       </body>
     </html>
