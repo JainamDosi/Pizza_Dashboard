@@ -1,9 +1,8 @@
 'use client';
 import { signIn } from 'next-auth/react';
 import Image from 'next/image';
-import { Roboto, Montserrat } from 'next/font/google';
-export const roboto = Roboto({ subsets: ['latin'], weight: ['400', '700'] });
-export const montserrat = Montserrat({ subsets: ['latin'], weight: ['400', '700'] });
+import { Montserrat } from 'next/font/google';
+const montserrat = Montserrat({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default function Login() {
   return (
